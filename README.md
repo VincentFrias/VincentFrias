@@ -68,7 +68,7 @@ Me chamo Vicente Frias, tenho 18 anos e sou do interior de São Paulo. Atualment
 <br/>
 <br/>
 
-### 📉 Estatísticas
+### Estatísticas
 
 <p>
   <img 
