@@ -1,11 +1,11 @@
-# 🤠Vicente Frias
+# Vicente Frias
 
 **`Desenvolvedor FullStack`**
 
 Me chamo Vicente Frias, tenho 18 anos e sou do interior de São Paulo. Atualmente, estou cursando Ciência da Computação na UNESP/IBILCE. Sou entusiasta de inovações tecnologias.
 ---
 
-### 📚 Linguagens e Tecnologias
+### Linguagens e Tecnologias
 
 <img 
     align="left" 
