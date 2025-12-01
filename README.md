@@ -67,9 +67,3 @@ Me chamo Vicente Frias, tenho 18 anos e sou do interior de São Paulo. Atualment
 
 <br/>
 <br/>
-      alt="GitHub Stats" 
-      height="150" 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=vincentfrias&theme=dark&layout=compact&custom_title=Tecnologias&langs_count=9" 
-  />
-
-</p>
