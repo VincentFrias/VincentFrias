@@ -1,0 +1,199 @@
+/* Variáveis de Cores */
+:root {
+    --primary-color: #007bff; /* Azul para tech feel */
+    --secondary-color: #6c757d;
+    --background-dark: #121212; /* Mais escuro e moderno */
+    --background-light: linear-gradient(135deg, #1e1e1e, #2c2c2c); /* Gradiente para hero */
+    --text-light: #ffffff;
+    --highlight-red: #dc3545; /* Vermelho mantido */
+    --accent-blue: #00bfff; /* Azul neon para highlights */
+}
+
+/* Base */
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(220, 53, 69, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* NAVBAR */
+.navbar {
+    border-bottom: 3px solid var(--highlight-red);
+    transition: background-color 0.3s;
+}
+
+.navbar:hover {
+    background-color: #222 !important;
+}
+
+.navbar-brand, .nav-link {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-blue) !important;
+}
+
+/* HERO / PERSONA */
+.hero {
+    padding: 120px 0;
+    text-align: center;
+    background: var(--background-light);
+    border-bottom: 5px solid var(--highlight-red);
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--highlight-red);
+    box-shadow: 0 0 40px rgba(220, 53, 69, 0.8);
+    filter: contrast(1.1) brightness(1.1); /* Melhora a imagem */
+    animation: pulse 2s infinite;
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 25px;
+    color: var(--accent-blue);
+}
+
+.hero .lead {
+    font-size: 1.4rem;
+    color: #bbbbbb;
+}
+
+.hero .btn-outline-light {
+    border-color: var(--highlight-red);
+    transition: all 0.3s;
+}
+
+.hero .btn-outline-light:hover {
+    background-color: var(--highlight-red);
+    color: var(--text-light);
+}
+
+/* HABILIDADES */
+#habilidades h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+    letter-spacing: 3px;
+}
+
+.badge {
+    transition: transform 0.3s;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+/* PROJETOS */
+#projetos h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--highlight-red);
+    letter-spacing: 3px;
+}
+
+.project-card {
+    background-color: #1a1a1a !important;
+    border: 1px solid #444;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 15px var(--accent-blue);
+}
+
+.project-card .card-body {
+    padding: 30px;
+}
+
+.project-card .card-title {
+    color: var(--accent-blue);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.project-card .card-text {
+    color: #dddddd;
+}
+
+.project-card .btn-light {
+    background-color: var(--highlight-red);
+    border-color: var(--highlight-red);
+    color: var(--text-light);
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.project-card .btn-light:hover {
+    background-color: #ff4757;
+}
+
+#loader {
+    display: none; /* Escondido por padrão */
+}
+
+/* FOOTER */
+footer {
+    border-top: 3px solid var(--highlight-red);
+    font-size: 1rem;
+}
+
+.social-links a {
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-blue);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+    }
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
